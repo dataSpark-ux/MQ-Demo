@@ -14,4 +14,13 @@ public interface Constant {
     String FANOUT_B = "fanoutB";
 
     String FANOUT_EXCHANGE = "fanoutExchange";
+
+    String TOPIC_A = "topicA";
+
+    String TOPIC_B = "topicB";
+
+    String TOPIC_C = "topicC";
+
+    String TOPIC_EXCHANGE = "topicExchange";
+
 }

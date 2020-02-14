@@ -11,6 +11,8 @@ class RabbitProviderApplicationTests {
     OneToOneSender oneToOneSender;
     @Resource
     FanoutSender fanoutSender;
+    @Resource
+    TopicSender topicSender;
     @Test
     void contextLoads() {
     }
@@ -24,6 +26,14 @@ class RabbitProviderApplicationTests {
     void fanout() {
         fanoutSender.fanSender1();
         fanoutSender.fanSender2();
+    }
+
+    @Test
+    void topic() {
+        topicSender.sendA();
+        topicSender.sendB();
+        topicSender.sendC();
+        topicSender.sendD();
     }
 
 }
