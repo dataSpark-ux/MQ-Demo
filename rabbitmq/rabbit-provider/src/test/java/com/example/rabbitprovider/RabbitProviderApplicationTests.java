@@ -9,6 +9,8 @@ import javax.annotation.Resource;
 class RabbitProviderApplicationTests {
     @Resource
     OneToOneSender oneToOneSender;
+    @Resource
+    FanoutSender fanoutSender;
     @Test
     void contextLoads() {
     }
@@ -16,6 +18,12 @@ class RabbitProviderApplicationTests {
     @Test
     void OneToOne() {
         oneToOneSender.send();
+    }
+
+    @Test
+    void fanout() {
+        fanoutSender.fanSender1();
+        fanoutSender.fanSender2();
     }
 
 }
