@@ -9,6 +9,7 @@
     </parent>
     <modules>
         <module>rabbit-provider</module>
+        <module>rabbitmq-consumer</module>
     </modules>
     <groupId>com.example</groupId>
     <artifactId>rabbitmq</artifactId>
